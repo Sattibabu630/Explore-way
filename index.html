@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ExploreMate - Travel Discovery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">🌍 ExploreMate</div>
+
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Discover Amazing Places</h1>
+
+        <p>
+            Find famous places, local food,
+            hidden gems and things to do.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Surat, Vizag or Vadodara"
+            >
+
+            <button onclick="searchPlace()">
+                🔍 Search
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+</section>
+
+
+<!-- DESTINATIONS -->
+
+<section id="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <p class="subtitle">
+        Select a city and explore
+    </p>
+
+
+    <div class="destination-container">
+
+
+        <!-- SURAT -->
+
+        <div class="destination-card">
+
+            <img src="images/surat.jpg" alt="Surat">
+
+            <div class="card-content">
+
+                <h3>Surat</h3>
+
+                <p>
+                    Explore beaches, heritage places
+                    and famous Surati food.
+                </p>
+
+                <button onclick="showPlace('surat')">
+                    Explore Surat
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- VIZAG -->
+
+        <div class="destination-card">
+
+            <img src="images/vizag.jpg" alt="Vizag">
+
+            <div class="card-content">
+
+                <h3>Visakhapatnam</h3>
+
+                <p>
+                    Discover beaches, hills,
+                    museums and coastal beauty.
+                </p>
+
+                <button onclick="showPlace('vizag')">
+                    Explore Vizag
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- VADODARA -->
+
+        <div class="destination-card">
+
+            <img src="images/vadodara.jpg" alt="Vadodara">
+
+            <div class="card-content">
+
+                <h3>Vadodara</h3>
+
+                <p>
+                    Explore royal heritage,
+                    gardens and Gujarati food.
+                </p>
+
+                <button onclick="showPlace('vadodara')">
+                    Explore Vadodara
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RESULT -->
+
+<section id="result">
+
+    <div id="placeDetails"></div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <h2>About ExploreMate</h2>
+
+    <p>
+        ExploreMate is a travel discovery website.
+        It helps users discover famous places,
+        local food, hidden places and activities
+        in different cities.
+    </p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 ExploreMate | Travel Discovery Website
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
